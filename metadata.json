@@ -1,0 +1,6 @@
+{
+  "name": "Confi — Wingo 1 Min Predictor",
+  "description": "Luxury dark obsidian and gold Wingo 1-minute prediction utility with 1:1 Picture-in-Picture overlay mode.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

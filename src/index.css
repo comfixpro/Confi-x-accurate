@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: 'Cinzel', serif;
+    --font-sans: 'Outfit', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #070709;
+    color: #F5F2EB;
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-mono-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle luxury gold shimmer border & obsidian glass */
+.obsidian-surface {
+  background: linear-gradient(165deg, rgba(20, 20, 26, 0.96) 0%, rgba(10, 10, 14, 0.98) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85), inset 0 1px 0 rgba(255, 236, 179, 0.12);
+}
+
+.obsidian-pip-frame {
+  background: radial-gradient(circle at 50% 32%, rgba(32, 28, 20, 0.95) 0%, rgba(11, 11, 15, 0.99) 70%);
+  border: 1.5px solid rgba(212, 175, 55, 0.45);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.92),
+    0 0 28px rgba(212, 175, 55, 0.14),
+    inset 0 1px 0 rgba(255, 238, 186, 0.22);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF3D1 0%, #D4AF37 50%, #AA8010 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-button {
+  background: linear-gradient(135deg, #E5C158 0%, #D4AF37 50%, #A67C1E 100%);
+  color: #08080A;
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+.gold-button:hover {
+  background: linear-gradient(135deg, #F0D278 0%, #DFB942 50%, #B88B28 100%);
+}
+
+.gold-button:active {
+  transform: scale(0.985);
+}
